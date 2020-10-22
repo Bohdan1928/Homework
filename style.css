@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    border: 5px solid red;
+    width: 100%;
+}
+
+.head{
+    background-color: pink;
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+}
+.head-text{
+    text-align: center;
+    background-color: pink;
+    padding-bottom: 20px    ;
+
+}
+.head-white{
+    background-color: white;
+    width: 80%;
+    min-height: 75px;
+    margin: 0 auto;
+    padding: 25px;
+}
+.head-black {
+    background-color: black;
+    width: 80%;
+    min-height: 37px;
+    margin: 0 auto;
+
+}
+.menu{
+    background-color: grey;
+    width: 100%;
+    min-height: 180px;
+    clear: both;
+}
+.red-menu {
+    background-color: darkred;
+    width: 25%;
+    min-height: 150px;
+    float: left;
+}
+.orange-menu {
+    background-color: orange;
+    width: 25%;
+    min-height: 150px;
+    float: left;
+}
+.blue-menu {
+    background-color: blue;
+    width: 25%;
+    min-height: 150px;
+    float: left;
+}
+.yellow-menu {
+    background-color: yellow;
+    width: 25%;
+    min-height: 150px;
+    float: left;
+}
+.menu-text{
+    clear: both;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
