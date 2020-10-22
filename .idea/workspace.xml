@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="190cc468-46bf-4ff3-9972-f04c249c9328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Homework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jBsk8R3I1BrdYozy6kB09qyPTv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="190cc468-46bf-4ff3-9972-f04c249c9328" name="Default Changelist" comment="" />
+      <created>1603288963650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603288963650</updated>
+      <workItem from="1603288966248" duration="1115000" />
+      <workItem from="1603294022815" duration="99000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1603294120607">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1603294120607" />
+    <state x="294" y="280" width="513" height="341" key="Github.ShareDialog" timestamp="1603289979266">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="294" y="280" width="513" height="341" key="Github.ShareDialog/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603289979266" />
+    <state x="32" y="111" key="Github.UntrackedFilesDialog" timestamp="1603290046221">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="32" y="111" key="Github.UntrackedFilesDialog/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603290046221" />
+    <state x="184" y="15" key="SettingsEditor" timestamp="1603289379618">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="15" key="SettingsEditor/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603289379618" />
+  </component>
+</project>
