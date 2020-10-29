@@ -93,3 +93,17 @@ let surname4 = prompt("What is your surname?");
 document.write(lastname4 + " " + name4 + " " + surname4);*/
 
 
+/* Task7
+let num1 = +prompt("Введіть перше число!");
+let num2 = +prompt("Введіть друге число!");
+let num3 = +prompt("Введіть третє число!");
+console.log(num1, num2, num3);*/
+
+
+/* Task8
+let num1 = +prompt("Введіть перше число!");
+let num2 = +prompt("Введіть друге число!");
+let num3 = +prompt("Введіть третє число!");
+let num4 = +prompt("Введіть четверте число!");
+let result = (num1 + num2 + num3 + num4);
+console.log(parseInt(result));*/
