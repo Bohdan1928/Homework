@@ -105,5 +105,56 @@ let num1 = +prompt("Введіть перше число!");
 let num2 = +prompt("Введіть друге число!");
 let num3 = +prompt("Введіть третє число!");
 let num4 = +prompt("Введіть четверте число!");
-let result = (num1 + num2 + num3 + num4);
-console.log(parseInt(result));*/
+let result = (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4));
+console.log(result);*/
+
+
+/* Task9
+let num1 = +prompt("Введіть перше число!");
+let num2 = +prompt("Введіть друге число!");
+let num3 = +prompt("Введіть третє число!");
+let result = (parseFloat(num1)) + (parseFloat(num2)) + (parseFloat(num3));
+console.log(result);*/
+
+
+/* Task10
+let num1 = +prompt("Введіть перше число!");
+let num2 = +prompt("Введіть друге число!");
+let num3 = +prompt("Введіть третє число!");
+let result = (parseFloat(num1)) + (parseFloat(num2)) + (parseFloat(num3));
+console.log(Math.round(result));*/
+
+
+/* Task11
+let num1 = +prompt("Введіть перше число!");
+let num2 = +prompt("Введіть друге число!");
+let result = Math.pow(num1, num2);
+console.log(result);*/
+
+/* Task12
+let a = 100;
+let b = '100';
+let c = true;
+let d = undefined;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);*/
+
+
+/* Task13
+console.log(5<6);
+console.log(5>6);
+console.log(5===6);
+console.log(5>=6);
+console.log(10===10);
+console.log(10>=10);
+console.log(10!==10);
+console.log(10<10);
+console.log(10>10);
+console.log(123>123);
+console.log(123===123);
+*/
+
+
+
