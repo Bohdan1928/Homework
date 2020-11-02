@@ -116,3 +116,35 @@ console.log(users[6].age);
 console.log(users[3].age);
 console.log((users[4].age), (users[4].name));
 console.log((users[5].age), (users[5].status));*/
+
+/* Task4
+let content = document.getElementById("content");
+console.log(content.innerText);*/
+
+/* Task5
+let rules = document.getElementById("rules");
+console.log(rules.innerText);*/
+
+/* Task6
+let content = document.getElementById("content");
+content.innerText = "efvevev"*/
+
+/* Task7
+let rules = document.getElementById("rules");
+rules.innerText = "efvevev"*/
+
+/* Task8-9
+let content = document.getElementById("content");
+content.style.backgroundColor = "red"
+content.style.color = "darkblue"
+let rules = document.getElementById("rules");
+rules.style.backgroundColor = "red"
+rules.style.color = "darkblue"
+let ul = document.getElementsByTagName("ul")
+for (let i = 0; i < ul.length; i++){
+    ul[i].style.backgroundColor = "red";
+    ul[i].style.color = "darkblue"
+}
+*/
+
+let rules = document.getElementById("rules");
