@@ -10,10 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190cc468-46bf-4ff3-9972-f04c249c9328" name="Default Changelist" comment="block">
+    <list default="true" id="190cc468-46bf-4ff3-9972-f04c249c9328" name="Default Changelist" comment="home">
+      <change afterPath="$PROJECT_DIR$/JavaScript/lesson3(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block.html" beforeDir="false" afterPath="$PROJECT_DIR$/block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -55,7 +58,14 @@
       <workItem from="1603288966248" duration="1115000" />
       <workItem from="1603294022815" duration="99000" />
       <workItem from="1603379011818" duration="3965000" />
-      <workItem from="1603387027344" duration="11797000" />
+      <workItem from="1603387027344" duration="12895000" />
+      <workItem from="1603481734995" duration="12752000" />
+      <workItem from="1603727817793" duration="570000" />
+      <workItem from="1603892746935" duration="303000" />
+      <workItem from="1603961340773" duration="12400000" />
+      <workItem from="1603997660711" duration="4761000" />
+      <workItem from="1604058824873" duration="10734000" />
+      <workItem from="1604308741530" duration="14532000" />
     </task>
     <task id="LOCAL-00001" summary="block">
       <created>1603379309133</created>
@@ -71,7 +81,63 @@
       <option name="project" value="LOCAL" />
       <updated>1603382664439</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="block">
+      <created>1603401543922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603401543923</updated>
+    </task>
+    <task id="LOCAL-00004" summary="flex">
+      <created>1603727996102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603727996102</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Class">
+      <created>1603892924859</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603892924859</updated>
+    </task>
+    <task id="LOCAL-00006" summary="home">
+      <created>1603967771990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603967771990</updated>
+    </task>
+    <task id="LOCAL-00007" summary="home">
+      <created>1603971913683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603971913683</updated>
+    </task>
+    <task id="LOCAL-00008" summary="home">
+      <created>1603974857787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603974857787</updated>
+    </task>
+    <task id="LOCAL-00009" summary="home">
+      <created>1604002363115</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604002363115</updated>
+    </task>
+    <task id="LOCAL-00010" summary="home">
+      <created>1604074437823</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604074437823</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,33 +157,47 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="block" />
-    <option name="LAST_COMMIT_MESSAGE" value="block" />
+    <MESSAGE value="flex" />
+    <MESSAGE value="Class" />
+    <MESSAGE value="home" />
+    <option name="LAST_COMMIT_MESSAGE" value="home" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1603294120607">
+    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1603961406633">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1603294120607" />
-    <state x="294" y="280" width="513" height="341" key="Github.ShareDialog" timestamp="1603382832253">
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768/-1280.-256.1280.1024@0.0.1366.768" timestamp="1603961406633" />
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1603728397236" />
+    <state x="294" y="280" width="248" height="264" key="Github.ShareDialog" timestamp="1603728062754">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="294" y="280" width="513" height="341" key="Github.ShareDialog/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603289979266" />
-    <state x="294" y="280" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1603382832253" />
+    <state x="294" y="280" width="513" height="341" key="Github.ShareDialog/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603401951730" />
+    <state x="294" y="280" width="248" height="264" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1603728062754" />
     <state x="32" y="111" key="Github.UntrackedFilesDialog" timestamp="1603290046221">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="32" y="111" key="Github.UntrackedFilesDialog/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603290046221" />
-    <state x="184" y="15" key="SettingsEditor" timestamp="1603289379618">
+    <state x="184" y="15" key="SettingsEditor" timestamp="1603401690395">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="15" key="SettingsEditor/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603289379618" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1603382667384">
+    <state x="184" y="15" key="SettingsEditor/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603401690395" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1604074443517">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1603382667384" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768/-1280.-256.1280.1024@0.0.1366.768" timestamp="1604074443517" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603401564096" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1604002369809" />
     <state x="-1127" y="-113" width="1009" height="743" maximized="true" key="dock-window-1" timestamp="1603389169983">
       <screen x="-1280" y="-96" width="1280" height="1024" />
     </state>
     <state x="-1127" y="-113" width="1009" height="743" maximized="true" key="dock-window-1/0.0.1366.768/-1280.-96.1280.1024@0.0.1366.768" timestamp="1603389169983" />
+    <state x="339" y="167" key="run.anything.popup" timestamp="1603970549472">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="167" key="run.anything.popup/0.0.1366.768/-1280.-256.1280.1024@0.0.1366.768" timestamp="1603970549472" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1604073718720">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/-1280.-256.1280.1024@0.0.1366.768" timestamp="1604073718720" />
   </component>
 </project>
