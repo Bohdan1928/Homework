@@ -147,4 +147,18 @@ for (let i = 0; i < ul.length; i++){
 }
 */
 
-let rules = document.getElementById("rules");
+/*let rules = document.getElementById("rules");
+console.log(rules.classList);*/
+
+/*
+let fc_rules = document.getElementsByClassName("fc_rules");
+for (let i = 0; i < fc_rules.length; i++){
+    console.log(fc_rules[i].innerText);
+}*/
+
+/*
+let fc_rules = document.getElementsByClassName("fc_rules");
+for (let i = 0; i < fc_rules.length; i++){
+    fc_rules[i].style.color = "red";
+}*/
+
