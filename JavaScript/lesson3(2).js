@@ -1,4 +1,5 @@
-/* Task1
+/*
+Task1
 let human = {
     name: "Erik",
     age: 20,
@@ -23,7 +24,8 @@ let cup = {
     material: "glass",
     volume: 250,
     pictures: true
-}*/
+}
+*/
 
 
 /* Task2-4
@@ -104,7 +106,8 @@ console.log(Object.keys(tableLamp));
 console.log(Object.keys(cups));
 */
 
-let cars = [
+
+/*let cars = [
     Audi = {
         model: "Q5",
         year: 2013,
@@ -226,6 +229,8 @@ let cars = [
         }
     }
 ]
+
+
 let cities = [
     city1 = {
         name: "L`viv",
@@ -287,9 +292,94 @@ let cities = [
         country: "Ukraine",
         region: "Europe"
     }
-]
+]*/
 
-for (let i = 0; i < cars.length; i++) {
 
-    
+/*
+let i = 0;
+let x = 0
+while(i < cars.length){
+    i++;
+    x += i;
 }
+console.log(x)
+let j = 0;
+let y = 0
+while(j < cars.length){
+    j++;
+    y += i;
+}
+
+console.log(y);
+for (let i = 0; i < cars.length; i++) {
+}
+console.log(cars);
+for (let i = 0; i < cities.length; i++) {
+}
+console.log(cities);
+
+
+for (const car of cars) {
+}
+console.log(cars);
+for (const cities of cities) {
+}
+console.log(cities);
+
+*/
+
+
+/* Task 11-12
+let f = JSON.stringify(human);
+let clonedHuman = JSON.parse(f);
+
+let g = JSON.stringify(dog);
+let clonedDog = JSON.parse(g);
+
+let  h = JSON.stringify(bag);
+let clonedBag = JSON.parse(h);
+
+let i = JSON.stringify(lamp);
+let clonedLamp = JSON.parse(i)
+
+let j = JSON.stringify(cup);
+let clonedCup = JSON.parse(j);*/
+
+
+
+/* Task 13
+for (let i = 0; i < cars.length; i++) {
+    console.log(JSON.stringify(cars[i]))
+}
+*/
+
+/* Task 14
+for (let i = 0; i < cities.length; i++) {
+    console.log(JSON.stringify(cities[i]))
+}*/
+
+/* Task 15
+let s = []
+for (let i = 0; i < cars.length; i++) {
+   s.push(JSON.stringify(cars[i]))
+}
+console.log(s);*/
+
+
+let users = [
+    {
+        name: "Andriy",
+        age: 42,
+        skills: ["DevOps"," Driver"]
+    },
+    {
+        name: "Bogdan",
+        age: 32,
+        skills: ["DevOps"," Driver", "Developer"]
+    },
+    {
+        name: "Roman",
+        age: 42,
+        skills: ["Driver", "sportsman"]
+    }
+] 
