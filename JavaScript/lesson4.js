@@ -80,3 +80,83 @@ function mass(one){
     return one;
 }
 console.log(mass([1,5,"Курлик", true]))*/
+
+
+/* Task 7-8
+function mass(array){
+    let min = array[0];
+    let max = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < min){
+            min = array[i];
+            return min
+        }
+        if (array[i] > max){
+            max = array[i]
+            return max
+        }
+    }
+    console.log(min);
+    console.log(max);
+}
+mass([0.3, 0.004, 1])*/
+
+
+/* Task 9
+function mass(array){
+    for (let i = 0; i < arguments.length; i++) {
+        console.log(arguments[i])
+        return arguments[i]
+    }
+}
+mass([34, "true", false])*/
+
+
+/* Task 10
+function mass(array){
+    let sum = 0
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+        }
+    console.log(sum / 4)
+}
+mass([34, 14, 80, 30])*/
+
+
+/* Task 11
+function mass(array){
+    console.log(array.length);
+    return array.length;
+}
+mass([{class: false}, {213: 213}, {23: "Car"}])*/
+
+
+/* Task12
+function mass(array){
+    let sum = 0;
+    for (let i of array) {
+        if (typeof i === "object" && !Array.isArray(i)){
+            for (let obj in i) {
+                sum++;
+            }
+        }
+    }
+    console.log(sum);
+}
+
+mass([{class: "Body"}, 22, {age: 22}, {num: 1, look: false}, false])*/
+
+
+function mass(array1, array2){
+    let sum = []
+    for (let k = 0; k < sum.length; k++) {
+        for (let i = 0; i < array1.length; i++) {
+            for (let j = 0; j < array2.length; j++) {
+                sum[k] = array1[i] + array2[j];
+            }
+        }
+    }
+    console.log(sum);
+    return sum
+}
+mass([0, 2, 3, 4, 5], [2, 3, 4, 5, 6])
