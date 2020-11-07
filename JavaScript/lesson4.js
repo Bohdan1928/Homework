@@ -147,16 +147,65 @@ function mass(array){
 mass([{class: "Body"}, 22, {age: 22}, {num: 1, look: false}, false])*/
 
 
-function mass(array1, array2){
-    let sum = []
-    for (let k = 0; k < sum.length; k++) {
+/*
+ Task 13
+function mass(array1, array2) {
+    let sum = [];
         for (let i = 0; i < array1.length; i++) {
-            for (let j = 0; j < array2.length; j++) {
-                sum[k] = array1[i] + array2[j];
-            }
+                sum.push(array2[i] + array1[i]);
         }
-    }
-    console.log(sum);
+    console.log(sum)
     return sum
 }
-mass([0, 2, 3, 4, 5], [2, 3, 4, 5, 6])
+mass([1, 2, 3, 4, 5], [1, 1, 1, 1, 1]);
+*/
+
+
+/* task with ***
+function mass(array, index) {
+    let arr = []
+    for (let i = 0; i < array.length; i++) {// пройшлися по кожному елементу масива
+        if (index === i){
+            arr.push(array[i]+1)
+        } else{
+            arr.push(array[i])
+        }
+    }
+    return arr
+}
+console.log(mass([4, 3, 2, 1, 0], 0))*/
+
+/* task with ***
+function mass(array){
+    let arr = [];
+    let arr2 = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0) {
+            arr.unshift(array[i]);
+        } else if (array[i] !== 0) {
+            arr2.unshift(array[i])
+        }
+    }
+        for (let j = 0; j < arr2.length; j++) {
+            arr.unshift(arr2[j])
+        }
+
+    return arr;
+}
+
+console.log(mass([0, 4, 0, 1, 3, 0, 5]));*/
+
+
+/*
+function add(){
+    let avatar = document.createElement('div');
+    document.body.appendChild(avatar)
+    avatar.style.backgroundColor = "red"
+    avatar.innerText = "Hello owu"
+    console.log(typeof arguments)
+    console.log(avatar.innerText);
+}
+add()
+*/
+
+
