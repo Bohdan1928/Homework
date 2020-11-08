@@ -366,20 +366,141 @@ for (let i = 0; i < cars.length; i++) {
 console.log(s);*/
 
 
+/* Task 16
 let users = [
-    {
-        name: "Andriy",
-        age: 42,
-        skills: ["DevOps"," Driver"]
-    },
-    {
-        name: "Bogdan",
-        age: 32,
-        skills: ["DevOps"," Driver", "Developer"]
-    },
-    {
-        name: "Roman",
-        age: 42,
-        skills: ["Driver", "sportsman"]
+   user1 = { name: "Andriy", age: 42, skills:['HTML/CSS','JS','C++']},
+    user2 = { name: "Bogdan", age: 32, skills: ['HTML/CSS','JS']},
+    user3 = { name: "Roman", age: 42, skills: ['HTML/CSS','JS','PHP']}
+];
+
+for(let i of users){
+    for(let j of i.skills){
+        console.log(j);
     }
-] 
+}
+*/
+
+
+/* Task 17
+let users = [
+    user1 = { name: "Andriy", age: 42, skills:['HTML/CSS','JS','C++']},
+    user2 = { name: "Bogdan", age: 32, skills: ['HTML/CSS','JS']},
+    user3 = { name: "Roman", age: 42, skills: ['HTML/CSS','JS','PHP']}
+];
+let a = [];
+for(let i of users){
+    for(let j of i.skills){
+    }
+    a.push(i.skills)
+}
+console.log(a);
+*/
+
+
+/* Task 19
+let users = [{name: 'vasya', age: 31, status: false, skills: ['java', 'js']},
+    {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']},
+    {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']},
+    {name: 'olya', age: 28, status: false, skills: ['java', 'js']},
+    {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+
+for(let i of users) {
+    console.log("_________");
+    for (let j of i.skills) {
+        console.log(j);
+    }
+}*/
+
+
+let users = [{
+    name: 'vasya',
+    age: 31,
+    status: false,
+    address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+}, {
+    name: 'petya',
+    age: 30,
+    status: true,
+    address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+}, {
+    name: 'kolya',
+    age: 29,
+    status: true,
+    address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+}, {
+    name: 'olya',
+    age: 28,
+    status: false,
+    address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+}, {
+    name: 'max',
+    age: 30,
+    status: true,
+    address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+}, {
+    name: 'anya',
+    age: 31,
+    status: false,
+    address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+}, {
+    name: 'oleg',
+    age: 28,
+    status: false,
+    address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+}, {
+    name: 'andrey',
+    age: 29,
+    status: true,
+    address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+}, {
+    name: 'masha',
+    age: 30,
+    status: true,
+    address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+}, {
+    name: 'olya',
+    age: 31,
+    status: false,
+    address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+}, {
+    name: 'max',
+    age: 31,
+    status: true,
+    address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+}];
+
+/* Task 24
+let a = [];
+for(let i of users){
+    console.log("_______");
+    a.push(i.address)
+    console.log(i.address);
+    a.push(i.address);
+}
+console.log(a);
+*/
+
+/* Task 25!
+let avatar = document.createElement('div');
+document.body.appendChild(avatar)
+
+    for (const value in users) {
+        let avatar1 = document.createElement("div");
+        document.body.appendChild(avatar1);
+        avatar1.style.backgroundColor = "red";
+        avatar1.innerHTML= users[value];
+    }
+*/
+
+/* Task 26
+let avatar = document.createElement('div');
+document.body.appendChild(avatar)
+
+for (const i in users) {
+    for (const value in users[i]) {
+        let avatar1 = document.createElement("div");
+        document.body.appendChild(avatar1);
+        avatar1.style.backgroundColor = "red";
+        avatar1.innerHTML = value;
+    }
+}*/
