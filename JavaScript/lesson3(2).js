@@ -412,6 +412,7 @@ for(let i of users) {
 }*/
 
 
+/*
 let users = [{
     name: 'vasya',
     age: 31,
@@ -468,6 +469,8 @@ let users = [{
     status: true,
     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
 }];
+*/
+
 
 /* Task 24
 let a = [];
@@ -492,11 +495,12 @@ document.body.appendChild(avatar)
     }
 */
 
-/* Task 26
-let avatar = document.createElement('div');
-document.body.appendChild(avatar)
 
+
+
+/* Task26
 for (const i in users) {
+    document.write("___________");
     for (const value in users[i]) {
         let avatar1 = document.createElement("div");
         document.body.appendChild(avatar1);
@@ -504,3 +508,43 @@ for (const i in users) {
         avatar1.innerHTML = value;
     }
 }*/
+
+
+/* Task 27
+for (const i in users) {
+    document.write("___________");
+    for (const value in users[i]) {
+        let avatar1 = document.createElement("div");
+        document.body.appendChild(avatar1);
+        let avatar2 = document.createElement("div");
+        document.body.appendChild(avatar2);
+        let avatar3 = document.createElement("div");
+        document.body.appendChild(avatar3);
+        let avatar4 = document.createElement("div");
+        document.body.appendChild(avatar4);
+        avatar1.style.backgroundColor = "red";
+        avatar1.innerHTML = value;
+    }
+}
+*/
+
+/*
+
+let usersWithId =
+        [{id: 1, name: 'vasya', age: 31, status: false},
+        {id: 2, name: 'petya', age: 30, status: true},
+        {id: 3, name: 'kolya', age: 29, status: true},
+        {id: 4, name: 'olya', age: 28, status: false},];
+let citiesWithId =
+        [{user_id: 3, country: 'USA', city: 'Portland'},
+        {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+        {user_id: 2, country: 'Poland', city: 'Krakow'},
+        {user_id: 4, country: 'USA', city: 'Miami'},];
+
+let a = [];
+for (const i in usersWithId) {
+    for (const j in citiesWithId) {
+        a = usersWithId[i] + "address: " + citiesWithId[j]
+    }
+}
+console.log(a);*/
