@@ -72,6 +72,7 @@ console.log(select.attrs);
 */
 
 
+/* Task 3
 let car = {
     model: "Toyota Corolla",
     maker: "Toyota-motors",
@@ -79,7 +80,7 @@ let car = {
     maxSpeed: 250,
     value: 2.5,
     drive(){
-        console.log(`Їдемо зі швидкістю ${maxSpeed} км/год`);
+        console.log(`Їдемо зі швидкістю ${(this.maxSpeed)} км/год`);
     },
     info(){
         console.log(car.model, car.maker, car.years, car.maxSpeed, car.value);
@@ -96,6 +97,7 @@ let car = {
         this.driver1 = driver;
     }
 }
+car.drive()
 car.info();
 car.increaseMaxSpeed(25);
 car.changeYear(0.5);
@@ -105,6 +107,87 @@ car.addDriver({
     exp: 3,
 })
 
-console.log(car);
+console.log(car);*/
 
 
+/* Task 4
+function add(one) {
+    let car = {
+        model: "Toyota Corolla",
+        maker: "Toyota-motors",
+        years: 2015,
+        maxSpeed: 250,
+        value: 2.5,
+        drive() {
+            `Їдемо зі швидкістю ${this.maxSpeed} км/год`
+        },
+        info() {
+            console.log(car.model, car.maker, car.years, car.maxSpeed, car.value);
+        },
+        increaseMaxSpeed(newSpeed) {
+            car.maxSpeed += newSpeed;
+            console.log(car.maxSpeed);
+        },
+        changeYear(newValue) {
+            car.value += newValue;
+            console.log(car.value);
+        },
+        addDriver(driver) {
+            this.driver1 = driver
+        },
+    }
+    car.drive();
+    car.info();
+    car.increaseMaxSpeed(25);
+    car.changeYear(0.5);
+    car.addDriver({
+        name: "Ihor",
+        age: 23,
+        exp: 3
+    })
+    console.log(car);
+}
+
+add();
+*/
+
+
+/* Task 5
+class Add {
+    constructor() {
+        let car = {
+            model: "Toyota Corolla",
+            maker: "Toyota-motors",
+            years: 2015,
+            maxSpeed: 250,
+            value: 2.5,
+            drive() {
+                `Їдемо зі швидкістю ${this.maxSpeed} км/год`
+            },
+            info() {
+                console.log(car.model, car.maker, car.years, car.maxSpeed, car.value);
+            },
+            increaseMaxSpeed(newSpeed) {
+                car.maxSpeed += newSpeed;
+                console.log(car.maxSpeed);
+            },
+            changeYear(newValue) {
+                car.value += newValue;
+                console.log(car.value);
+            },
+            addDriver(driver) {
+                this.driver1 = driver
+            },
+        }
+        car.drive();
+        car.info();
+        car.increaseMaxSpeed(25);
+        car.changeYear(0.5);
+        car.addDriver({
+            name: "Ihor",
+            age: 23,
+            exp: 3
+        })
+        console.log(car);
+    }
+}*/
