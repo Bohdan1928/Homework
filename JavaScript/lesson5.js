@@ -285,5 +285,5 @@ let pri = new priFunc("Bohdan", 18, 37)
 for (let i = 0; i < pop.length; i++) {
     if (pop[i].foot === pri.find) {
         console.log(pop[i]);
-    }
+ w   }
 }*/
