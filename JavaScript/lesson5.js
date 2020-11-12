@@ -257,16 +257,12 @@ for (let i = 0; i < pop.length; i++) {
     }
 }*/
 
-/* Task 7
+/* Task 7*/
 function popFunc(name, age, foot) {
     this.name = name;
     this.age = age;
     this.foot = foot;
-}
-function priFunc(name, age, find) {
-    this.name = name;
-    this.age = age;
-    this.find = find;
+
 }
 let pop =[
     new popFunc("Diana","16", 37),
@@ -280,10 +276,22 @@ let pop =[
     new popFunc("Marta","17", 37.5),
     new popFunc("Olga","22", 40.5)
 ];
+function priFunc(name, age, find) {
+    this.name = name;
+    this.age = age;
+    this.find = find;
+
+    this.findMy = () => {
+        for (let i = 0; i < pop.length; i++) {
+            if(pop[i].foot === pri.find){
+                console.log(pop[i]);
+                break
+            }
+        }
+    }
+
+}
+
 let pri = new priFunc("Bohdan", 18, 37)
 
-for (let i = 0; i < pop.length; i++) {
-    if (pop[i].foot === pri.find) {
-        console.log(pop[i]);
- w   }
-}*/
+pri.findMy()
