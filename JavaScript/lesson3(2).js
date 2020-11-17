@@ -483,7 +483,8 @@ for(let i of users){
 console.log(a);
 */
 
-/* Task 25!
+/*
+ Task 25!
 let avatar = document.createElement('div');
 document.body.appendChild(avatar)
 
