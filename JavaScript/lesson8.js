@@ -104,20 +104,99 @@ button.onclick = () => {
     console.log(myForm4.value);
 }*/
 
+
+/* Task17
 let func = (num, num2, element) => {
-    let table = document.createElement("table")
-    document.body.appendChild(table)
-    table.style.border = num
-    table.style.width = "40%"
-    table.style.cellpadding = "5"
+    let div = document.createElement(element)
+    let table = document.createElement("table");
+    document.body.appendChild(div)
+    div.style.backgroundColor = "black"
+    div.appendChild(table);
+    table.style.border = "1";
+    table.style.width = "40%";
+    table.style.cellpadding = "5";
 
-    for (let i = 0; i < num.length; i++) {
-        let tr = document.createElement("tr")
-        let th = document.createElement("th")
-        table.appendChild(tr)
-        tr.appendChild(th)
-
-        th.innerText = element
+    for (let i = 0; i < num; i++) {
+        let tr = document.createElement("tr");
+        table.appendChild(tr);
+        for (let i = 0; i < num2; i++) {
+            let th = document.createElement("th");
+            tr.appendChild(th);
+            th.innerText = "ячейка2"
+            th.style.color = "white"
+        }
     }
 }
-func(4,3,"nfvkjbvli")
+func(4,3,"div");
+*/
+
+
+/* Task23
+let button = document.createElement("button")
+document.body.appendChild(button)
+button.innerText = "Click"
+let myForm1 = document.forms.myForm2.someText1
+let myForm2 = document.forms.myForm2.someText2
+let myForm3 = document.forms.myForm2.someText3
+
+button.onclick = () => {
+    let func = () => {
+        let div = document.createElement("div")
+        let table = document.createElement("table");
+        document.body.appendChild(div)
+        div.style.backgroundColor = "black"
+        div.appendChild(table);
+        table.style.border = "1";
+        table.style.width = "40%";
+        table.style.cellpadding = "5";
+
+        for (let i = 0; i < myForm1.value; i++) {
+            let tr = document.createElement("tr");
+            table.appendChild(tr);
+            for (let i = 0; i < myForm2.value; i++) {
+                let th = document.createElement("th");
+                tr.appendChild(th);
+                th.innerText = myForm3.value
+                th.style.color = "white"
+            }
+        }
+    }
+    func(myForm1.value,myForm2.value,myForm3.value);
+}*/
+
+/*
+let div = document.createElement("div")
+document.body.appendChild(div)
+
+let button1 = document.createElement("button")
+div.appendChild(button1)
+button1.innerText = "right"
+let button2 = document.createElement("button")
+div.appendChild(button2)
+button2.innerText = "left"
+
+let img1 = document.createElement("img")
+img1.setAttribute("src", "download1.jpg")
+let img2 = document.createElement("img")
+img2.setAttribute("src", "download2.jpg")
+let img3 = document.createElement("img")
+img3.setAttribute("src", "download3.jpg")
+let img4 = document.createElement("img")
+img4.setAttribute("src", "download4.jpg")
+
+div.appendChild(img1)
+div.appendChild(img2)
+div.appendChild(img3)
+div.appendChild(img4)
+
+img1.style.display = "block"
+img2.style.display = "none"
+img3.style.display = "none"
+img4.style.display = "none"
+
+button1.onclick = () =>{
+    if(img1.style.display = "block"){
+        img1.style.display = "none"
+        img2.style.display = "block"
+}
+}*/
