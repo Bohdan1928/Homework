@@ -1,4 +1,4 @@
-function life(bus ,callback){
+/*function life(bus ,callback){
     console.log("Прокинувся");
 
     setTimeout(() => {
@@ -12,6 +12,7 @@ function life(bus ,callback){
         }, 2000)
     }, 1000)
 }
+
 function univer(aud, callback){
     callback("Біжу в аудиторію");
         if(aud < 5){
@@ -44,11 +45,6 @@ function lifeInUniver2(time, callback){
     }
 }
 
-function shavuha(callback){
-    callback("Пара закінчилась, вийшов з того універу")
-    callback("Без шавухи нікуди")
-}
-
 function repa(metronom, callback){
     callback("Пара закінчилась, вийшов з того універу")
     callback("Без шавухи нікуди")
@@ -70,6 +66,7 @@ function goHome(num, callback){
         callback("Шкода що нема маршрутки, прийдеться йти пішки", null)
     }
 }
+
 function inHome(dz, callback){
         callback("Приїхав додому")
 
@@ -80,6 +77,181 @@ function inHome(dz, callback){
         callback("Міша, всьо фігня, давай по-новій", null)
     }
 }
+
+life(9,(err, un) =>{
+    if(err){
+        console.log(err, "Я завалив сесію");
+    } else{
+        console.log("Сів в маршрутку.", un);
+        setTimeout(() => {
+            console.log("Я на місці");
+
+            univer(5, (err, good) => {
+                setTimeout(()=>{
+                    if(err){
+                        console.log(err);
+                    } else {
+                        console.log(good);
+
+                        lifeInUniver(30, (err, good) => {
+                            setTimeout(() => {
+                                if(err){
+                                    console.log(err);
+                                } else{
+                                    console.log(good, "йду довольний на наступну пару");
+
+                                    lifeInUniver2(20, (err, good)=> {
+                                        setTimeout(() =>{
+                                            if(err){
+                                                console.log(err);
+                                            } else{
+                                                console.log(good);
+
+                                                repa(121, (err, good) => {
+                                                    setTimeout(()=>{
+                                                        if(err){
+                                                            console.log(err);
+                                                        } else{
+                                                            console.log(good);
+
+                                                            goHome(46, (err, good) => {
+                                                                setTimeout(() =>{
+
+                                                                    if(err){
+                                                                        console.log(err);
+                                                                    } else{
+                                                                        console.log(good);
+
+                                                                        inHome(0, (err, good) => {
+                                                                            setTimeout(() =>{
+                                                                                if(err){
+                                                                                    console.log(err);
+                                                                                } else{
+                                                                                    console.log(good);
+                                                                                }
+                                                                            }, 2000)
+                                                                        })
+                                                                    }
+                                                                }, 2000)
+                                                            })
+                                                        }
+                                                    }, 2000)
+                                                })
+
+                                            }
+                                        }, 2000)
+                                    })
+                                }
+                            }, 2000)
+                        })
+                    }
+                },1000)
+            })
+        }, 1000)
+    }
+})*/
+
+function life(bus){
+    return new Promise((resolve, reject)=>{
+    console.log("Прокинувся");
+
+     setTimeout(() => {
+         console.log("Йду на маршрутку");
+            setTimeout(() => {
+               if(bus === 9){
+                  resolve("Їду в універ")
+               } else{
+                  reject("Нема маршрутки.");
+               }
+            }, 2000)
+        }, 1000)
+    })
+}
+
+function univer(aud){
+    return new Promise((resolve, reject)=> {
+
+        console.log(("Біжу в аудиторію"));
+        if (aud < 5) {
+            for (let i = 0; i < aud; i++) {
+                reject("Зайшов не в ту аудиторію. Вигнали")
+            }
+        } else{
+            resolve("Зайшов в аудиторію, сів за парту");
+        }
+    })
+}
+
+function lifeInUniver(money){
+    return new Promise((resolve, reject) => {
+        console.log(("Пара закінчилась, Йду в кормушку"));
+
+        if (money < 20) {
+            reject("Вигнали з кормушки.")
+        } else {
+            resolve( "Купив котлетки з бульбою,")
+        }
+    })
+}
+
+function lifeInUniver2(time) {
+    console.log("Прийшов на ту довбану пару")
+
+
+    return new Promise((resolve, reject) => {
+        console.log("Прийшов на ту довбану пару")
+
+        if (time < 15) {
+            reject("Правило \" 15 хв\" ніхто не відміняв")
+            reject("Валимо...")
+        } else {
+            resolve("Правило \"15 хв\" не спрацювало, вона прийшла")
+
+
+        }
+    })
+}
+
+function repa(metronom){
+    return new Promise((resolve, reject) =>{
+        console.log("Пара закінчилась, вийшов з того універу");
+        console.log("Без шавухи нікуди");
+        console.log("Поїв, можна йти на рєпу");
+
+        if(metronom > 120){
+            resolve("Метроном є, тому граю файно)))")
+        } else{
+            reject("Забув метроном, пічально")
+        }
+    })
+}
+
+function goHome(num){
+    return new Promise((resolve, reject)=>{
+        console.log("Рєпа закінчилась можна їхати додому");
+
+        if(num === 46){
+            resolve("О, є маршрутка, їду додому")
+        } else{
+            reject("Шкода що нема маршрутки, прийдеться йти пішки")
+        }
+    })
+}
+
+function inHome(dz){
+    console.log("Приїхав додому");
+
+    return new Promise((resolve, reject)=>{
+        console.log("Приїхав додому");
+
+        if (dz === 0){
+            resolve("На дз нічого, тому: \"Добраніч, солодких снів\"")
+        } else {
+            reject("Міша, всьо фігня, давай по-новій")
+        }
+    })
+}
+
 life(9,(err, un) =>{
     if(err){
         console.log(err, "Я завалив сесію");
