@@ -170,15 +170,17 @@ function life(bus){
 
 function univer(aud){
     return new Promise((resolve, reject)=> {
-
         console.log(("Біжу в аудиторію"));
-        if (aud < 5) {
-            for (let i = 0; i < aud; i++) {
-                reject("Зайшов не в ту аудиторію. Вигнали")
-            }
-        } else{
-            resolve("Зайшов в аудиторію, сів за парту");
-        }
+
+         setTimeout(()=>{
+              if (aud < 5) {
+                   for (let i = 0; i < aud; i++) {
+                     reject("Зайшов не в ту аудиторію. Вигнали")
+                   }
+              } else{
+                    resolve("Зайшов в аудиторію, сів за парту");
+              }
+         }, 2000)
     })
 }
 
@@ -186,29 +188,31 @@ function lifeInUniver(money){
     return new Promise((resolve, reject) => {
         console.log(("Пара закінчилась, Йду в кормушку"));
 
-        if (money < 20) {
-            reject("Вигнали з кормушки.")
-        } else {
-            resolve( "Купив котлетки з бульбою,")
-        }
+        setTimeout(()=>{
+            if (money < 20) {
+                reject("Вигнали з кормушки.")
+            } else {
+                resolve( "Купив котлетки з бульбою,")
+            }
+
+        }, 2000)
     })
 }
 
 function lifeInUniver2(time) {
-    console.log("Прийшов на ту довбану пару")
-
 
     return new Promise((resolve, reject) => {
         console.log("Прийшов на ту довбану пару")
+        setTimeout(()=>{
+            if (time > 15) {
+                reject("Правило \" 15 хв\" ніхто не відміняв")
+                reject("Валимо...")
+            } else {
+                resolve("Правило \"15 хв\" не спрацювало, вона прийшла")
 
-        if (time < 15) {
-            reject("Правило \" 15 хв\" ніхто не відміняв")
-            reject("Валимо...")
-        } else {
-            resolve("Правило \"15 хв\" не спрацювало, вона прийшла")
 
-
-        }
+            }
+        }, 2000)
     })
 }
 
@@ -216,13 +220,16 @@ function repa(metronom){
     return new Promise((resolve, reject) =>{
         console.log("Пара закінчилась, вийшов з того універу");
         console.log("Без шавухи нікуди");
-        console.log("Поїв, можна йти на рєпу");
 
-        if(metronom > 120){
-            resolve("Метроном є, тому граю файно)))")
-        } else{
-            reject("Забув метроном, пічально")
-        }
+        setTimeout(()=>{
+            console.log("Поїв, можна йти на рєпу");
+            if(metronom > 120){
+                resolve("Метроном є, тому граю файно)))")
+            } else{
+                reject("Забув метроном, пічально")
+            }
+
+        },2000)
     })
 }
 
@@ -230,97 +237,68 @@ function goHome(num){
     return new Promise((resolve, reject)=>{
         console.log("Рєпа закінчилась можна їхати додому");
 
-        if(num === 46){
-            resolve("О, є маршрутка, їду додому")
-        } else{
-            reject("Шкода що нема маршрутки, прийдеться йти пішки")
-        }
+        setTimeout(()=>{
+            if(num === 46){
+                resolve("О, є маршрутка, їду додому")
+            } else{
+                reject("Шкода що нема маршрутки, прийдеться йти пішки")
+            }
+        }, 2000)
     })
 }
 
 function inHome(dz){
-    console.log("Приїхав додому");
 
     return new Promise((resolve, reject)=>{
         console.log("Приїхав додому");
-
-        if (dz === 0){
-            resolve("На дз нічого, тому: \"Добраніч, солодких снів\"")
-        } else {
-            reject("Міша, всьо фігня, давай по-новій")
-        }
+        setTimeout(()=>{
+            if (dz === 0){
+                resolve("На дз нічого, тому: \"Добраніч, солодких снів\"")
+            } else {
+                reject("Міша, всьо фігня, давай по-новій")
+            }
+        },2000)
     })
 }
 
-life(9,(err, un) =>{
-    if(err){
-        console.log(err, "Я завалив сесію");
-    } else{
+life(9)
+    .then(un =>{
         console.log("Сів в маршрутку.", un);
-        setTimeout(() => {
-            console.log("Я на місці");
+        console.log("Я на місці");
 
-            univer(5, (err, good) => {
-                setTimeout(()=>{
-                    if(err){
-                        console.log(err);
-                    } else {
-                        console.log(good);
+        return univer(5)
+    })
+    .then(value => {
+        console.log(value);
 
-                        lifeInUniver(30, (err, good) => {
-                            setTimeout(() => {
-                                if(err){
-                                    console.log(err);
-                                } else{
-                                    console.log(good, "йду довольний на наступну пару");
+        return lifeInUniver(30)
+    })
+    .then(value => {
+        console.log(value, "Йду довольний на пару");
 
-                                    lifeInUniver2(20, (err, good)=> {
-                                        setTimeout(() =>{
-                                            if(err){
-                                                console.log(err);
-                                            } else{
-                                                console.log(good);
+        return lifeInUniver2(10)
+    })
+    .then(value => {
+        console.log(value);
 
-                                                repa(121, (err, good) => {
-                                                    setTimeout(()=>{
-                                                        if(err){
-                                                            console.log(err);
-                                                        } else{
-                                                            console.log(good);
+        return repa(125)
+    })
+    .then(value => {
+        console.log(value);
 
-                                                            goHome(46, (err, good) => {
-                                                                setTimeout(() =>{
+        return goHome(47)
+    })
+    .then(value => {
+        console.log(value);
 
-                                                                    if(err){
-                                                                        console.log(err);
-                                                                    } else{
-                                                                        console.log(good);
-
-                                                                        inHome(0, (err, good) => {
-                                                                            setTimeout(() =>{
-                                                                                if(err){
-                                                                                    console.log(err);
-                                                                                } else{
-                                                                                    console.log(good);
-                                                                                }
-                                                                            }, 2000)
-                                                                        })
-                                                                    }
-                                                                }, 2000)
-                                                            })
-                                                        }
-                                                    }, 2000)
-                                                })
-
-                                            }
-                                        }, 2000)
-                                    })
-                                }
-                            }, 2000)
-                        })
-                    }
-                },1000)
-            })
-        }, 1000)
-    }
+        return inHome(0)
+    })
+    .then(value => {
+        console.log(value);
+    })
+    .catch(reason => {
+        console.log(reason);
+    })
+.finally(()=>{
+    console.log("Тааа й таке))");
 })
